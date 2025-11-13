@@ -100,7 +100,7 @@ void draw()
             Asteroid a = asteroids.get(i);
             if(a.isDead() && a.getSize() > 10)
             {
-                if(a.getClass() == Chaser.class)
+                if(a instanceof Chaser)
                 {
                     asteroids.add(new Chaser(a.getX(), a.getY(), a.getVx()+Math.random()*100-50, a.getVy()+Math.random()*100-50, 0, (int)(a.getSize()/3), a.getSize() - 10));
                     asteroids.add(new Chaser(a.getX(), a.getY(), a.getVx()+Math.random()*100-50, a.getVy()+Math.random()*100-50, 0, (int)(a.getSize()/3), a.getSize() - 10));
