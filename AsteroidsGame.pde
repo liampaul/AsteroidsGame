@@ -465,11 +465,11 @@ void UI()
 }
 class TextParticle extends Floater
 {
-    protected String text;
+    protected String ttext;
     TextParticle(double x, double y, double Vx, double Vy, double direction, double health, String text)
     {
         super(x, y, Vx, Vy, direction, health);
-        this.text = text;
+        this.text = ttext;
     }
     TextParticle(double x, double y, double Vx, double Vy, double direction, double health, int number)
     {
