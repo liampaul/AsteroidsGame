@@ -27,7 +27,7 @@ float multiplier = 1;
 void setup()
 {
     frameRate(120);
-    fullScreen();
+    size(800,800);
     reset();
 
     for(int i = 0; i < 200; i++)
