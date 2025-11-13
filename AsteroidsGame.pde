@@ -398,7 +398,7 @@ void hit(Asteroid a, double damage)
     {
         a.health -= damage;
         a.setHitFlash(0.1f);
-        textParticles.add(new TextParticle(a.getX(), a.getY(), 0, 0, 0, 1, (int)-damage));
+        textParticles.add(new TextParticle(a.getX(), a.getY(), 0, 0, 0, 1, (int)(-damage)));
     }
 
 }
