@@ -405,7 +405,7 @@ void hit(Asteroid a, double damage)
 {
 
 }
-void ray()
+void dray()
 {
     for(Asteroid a : asteroids)
     {
