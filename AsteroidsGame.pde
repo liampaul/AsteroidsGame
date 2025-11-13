@@ -474,8 +474,8 @@ class TextParticle extends Floater
     TextParticle(double x, double y, double Vx, double Vy, double direction, double health, int number)
     {
         super(x, y, Vx, Vy, direction, health);
-        if (number < 0) this.text = nf(number);
-        else this.text = "+" + number;
+        if (number < 0) this.ttext = nf(number);
+        else this.ttext = "+" + number;
         
     }
     public void show()
@@ -486,7 +486,7 @@ class TextParticle extends Floater
         stroke(outlines);
         textSize(20);
         textAlign(CENTER);
-        text(text, 0, 0);
+        text(ttext, 0, 0);
         popMatrix();
     }
     public void updatePosition()
