@@ -10,7 +10,7 @@ class Spaceship extends Floater
         if (mousePressed && mouseButton == RIGHT) rayCharge = (float)Math.max(rayCharge - (Math.hypot(Vx, Vy)/60)/frameRate, 0);
         else
         {
-            if (rayCharge == 0) ray();
+            if (rayCharge == 0) dray();
             if (rayCharge < 50) rayCharge += 40/frameRate;
             
         }
